@@ -77,35 +77,37 @@ class Comments extends Component {
     return (
       <div className="bg-container">
         <h1 className="heading">Comments</h1>
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/comments-app/comments-img.png"
-          alt="comments"
-          className="comment-img"
-        />
-        <form className="form">
-          <p className="msg">Say something about 4.0 Technologies</p>
-          <input
-            className="name-input"
-            type="text"
-            placeholder="Your Name"
-            onChange={this.onInputChange}
-            value={name}
+        <div className="form-and-image">
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/comments-app/comments-img.png"
+            alt="comments"
+            className="comment-img"
           />
-          <textarea
-            className="comment-input"
-            rows="6"
-            onChange={this.onTextAreaChange}
-            value={comment}
-            placeholder="Your Comment"
-          />
-          <button
-            type="submit"
-            onClick={this.onAddButtonClicked}
-            className="btn"
-          >
-            Add Comment
-          </button>
-        </form>
+          <form className="form">
+            <p className="msg">Say something about 4.0 Technologies</p>
+            <input
+              className="name-input"
+              type="text"
+              placeholder="Your Name"
+              onChange={this.onInputChange}
+              value={name}
+            />
+            <textarea
+              className="comment-input"
+              rows="6"
+              onChange={this.onTextAreaChange}
+              value={comment}
+              placeholder="Your Comment"
+            />
+            <button
+              type="submit"
+              onClick={this.onAddButtonClicked}
+              className="btn"
+            >
+              Add Comment
+            </button>
+          </form>
+        </div>
         <hr />
         <div className="comment-count-container">
           <div className="comment-count">

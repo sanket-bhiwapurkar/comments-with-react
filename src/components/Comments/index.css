@@ -64,3 +64,20 @@
   margin: 0px;
   list-style-type: none;
 }
+@media all and (min-width: 768px) {
+  .bg-container {
+    padding: 80px;
+  }
+  .form-and-image {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form {
+    width: 50%;
+    order: 0;
+  }
+  .comment-img {
+    max-width: 400px;
+    order: 1;
+  }
+}
